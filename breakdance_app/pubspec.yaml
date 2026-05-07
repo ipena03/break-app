@@ -1,0 +1,40 @@
+name: breakdance_app
+description: Application dédiée au breakdance - gestion de profil et authentification
+
+# Version de l'application
+version: 1.0.0+1
+
+# Version minimale de Flutter requise
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+# Dépendances du projet (bibliothèques utilisées)
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Pour choisir une image depuis la galerie ou la caméra
+  image_picker: ^1.0.7
+
+  # Pour lire les vidéos dans l'application
+  video_player: ^2.8.6
+
+  # Pour sauvegarder des données localement (utilisateur connecté, etc.)
+  shared_preferences: ^2.2.3
+
+  # Icônes supplémentaires (optionnel mais joli)
+  cupertino_icons: ^1.0.6
+
+# Dépendances uniquement pour le développement (tests, etc.)
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+# Configuration des ressources (images, polices, etc.)
+flutter:
+  uses-material-design: true
+
+  # Déclaration des assets (fichiers statiques utilisés dans l'app)
+  assets:
+    - assets/images/
